@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+* {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-color: #001055;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#tela-login {
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    height: 580px;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.50);
+    overflow: hidden;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+}
+
+#imagem {
+    display: block;
+    height: 200px;
+    background: black url('../imagens/pexels-rodolfo-clix-1036936.jpg') top center no-repeat;
+    background-size: cover;
+}
+
+#formulario {
+    display: block;
+    padding: 20px;
+}
+
+#formulario > h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0px;
+}
+
+#formulario > p {
+    text-align: center;
+    margin: 10px;
+}
+
+#email {
+    background-color: black;
+    border-radius: 8px;
+}
+
+#senha {
+    background-color: black;
+    border-radius: 8px;
+}
+
+.material-icons {
+    color: white;
+}
+
+form > input[type=submit] {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #001055;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #002fff;
+    transition-duration: .1s;
+}
+
+form > a {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    padding-top: 5px;
+    margin-top: 5px;
+    height: 40px;
+    color: #001055;
+    border: 1px solid #001055;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+form > a > .material-icons {
+    color: #001055;
+    font-size: .8em;
+}
+
+#email > label {
+    display: none;
+}
+
+#senha > label {
+    display: none;
+}
+
+form > #email > .material-icons {
+    background-color: black;
+    padding: 8px;
+    border-radius: 8px;
+    transform: translatey(1px);
+}
+
+form > #senha > .material-icons {
+    background-color: black;
+    padding: 8px;
+    border-radius: 8px;
+    transform: translatey(1px);
+}
+
+form > div {
+    margin: 3px;
+}
+
+form > #email > input[type=email] {
+    width: calc(100% - 60px);
+    border-radius: 8px;
+    height: 30px;
+    background-color: rgb(181, 181, 181);
+    transform: translatey(-7px);
+}
+
+form > #senha > input[type=password] {
+    width: calc(100% - 60px);
+    border-radius: 8px;
+    height: 30px;
+    background-color:rgb(181, 181, 181);
+    transform: translatey(-6px);
+}
+
+form > #email > input:focus-within {
+    background-color: white;
+}
+
+form > #senha > input:focus-within {
+    background-color: white;
+}

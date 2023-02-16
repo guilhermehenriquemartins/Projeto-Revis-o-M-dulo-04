@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Projeto Login</title>
+    <link rel="shortcut icon" href="imagens/login.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/first.css">
+    <link rel="stylesheet" href="estilos/geral.css">
+</head>
+<body>
+    <main>
+        <section id="tela-login">
+            <div id="imagem">
+                <!-- IMAGEM DE LOGIN -->
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post">
+                    <div id="email">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="Seu e-mail">
+                        <label for="iemail">Email</label>
+                    </div>
+                    <div id="senha">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" autocomplete="current-password" minlength="5" maxlength="15" placeholder="Sua senha" required>
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#">Esqueci a senha<span class="material-icons">mail</span></a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
